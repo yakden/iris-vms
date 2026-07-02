@@ -128,6 +128,9 @@ if [ ! -f .env ]; then
 AUTH_REQUIRED=false
 DETECTOR_DEVICE=$VARIANT
 IRIS_IMAGE_TAG=${VER}-${VARIANT}
+# Detection-only (recommended privacy default): face recognition, cross-camera
+# identities and age/gender are OFF. Opt in with your own legal basis + face licence.
+BIOMETRICS_ENABLED=false
 IRIS_LICENSE_PUBKEY_N=$PUBKEY_N
 IRIS_LICENSE_PUBKEY_E=$PUBKEY_E
 TRIAL_AUTO_ENABLED=true
@@ -135,6 +138,10 @@ TRIAL_SERVER_URL=$PORTAL
 UPDATE_CHECK_ENABLED=true
 UPDATE_SERVER_URL=$UPDATES
 UPDATE_CHANNEL=stable
+# License-clean detector (Apache-2.0 RT-DETR, no AGPL YOLOv8n). Enable once the
+# image is rebuilt with the rtdetr_normalize fix (see docs/LICENSING.md):
+# MODEL_LICENSE_CLEAN=true
+# RTDETR_ONNX_URL=$BASE/rtdetr.onnx
 EOF
 fi
 
