@@ -66,10 +66,9 @@ GPU/CPU at runtime, not disk).
 
 - **On-prem / offline.** Iris runs on your hardware; nothing leaves your premises. The optional
   licence check transmits only a licence id + hardware fingerprint — no personal data.
-- **Detection-only by default.** Biometric features (face recognition, voiceprints) are an explicit,
-  consent-gated opt-in — GDPR / EU AI-Act / 152-FZ aware. See [docs](https://docs.iris.monmyip.io).
-- **Licence-clean models.** The distributed build uses Apache-2.0 / MIT models (RT-DETR detector);
-  it carries no AGPL or research-only weights.
+- **Detection-only by default.** Biometric features (face recognition, cross-camera identities,
+  voiceprints) are an explicit, consent-gated opt-in — GDPR / EU AI-Act / 152-FZ aware. You enable
+  them with your own legal basis and a commercial face-model licence. See [docs](https://docs.iris.monmyip.io).
 - Terms: **[EULA.md](EULA.md)** · **[EULA.ru.md](EULA.ru.md)**. This repository's install scripts are
   MIT (see [LICENSE](LICENSE)); the Iris software itself is licensed under the EULA.
 
