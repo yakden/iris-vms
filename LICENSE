@@ -1,0 +1,30 @@
+MIT License (installer & distribution scripts only)
+
+Copyright (c) 2026 yakden / Iris VMS
+
+The files in THIS repository (installation scripts, Docker Compose files,
+configuration examples and documentation) are provided under the MIT License:
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of these files (the "Files"), to deal in the Files without restriction,
+including without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Files, and to permit persons
+to whom the Files are furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Files.
+
+THE FILES ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE FILES OR THE USE OR OTHER DEALINGS IN THE
+FILES.
+
+------------------------------------------------------------------------------
+
+NOTE: This MIT licence covers ONLY the installation/distribution files in this
+repository. The Iris application itself (the container image these scripts
+download and run) is proprietary software licensed separately under the
+End-User Licence Agreement — see EULA.md / EULA.ru.md.

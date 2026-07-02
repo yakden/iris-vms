@@ -1,0 +1,52 @@
+# Iris — DISTRIBUTION compose (customer installs). Pulls the pre-built image from our
+# private registry (no source shipped, no local build). CPU-safe by default; the
+# installer adds docker-compose.gpu.yml when an NVIDIA GPU is present.
+#   docker compose -f docker-compose.dist.yml [-f docker-compose.gpu.yml] up -d
+services:
+  vms:
+    image: registry.iris.monmyip.io/iris:${IRIS_IMAGE_TAG:-1.60.0-cpu}
+    container_name: vms
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8120:8120"
+    env_file:
+      - .env
+    user: "1000:1000"
+    cap_drop:
+      - ALL
+    security_opt:
+      - "no-new-privileges:true"
+    volumes:
+      - ./data:/app/data
+      - ./models:/app/models
+    shm_size: "512m"
+    mem_limit: 6g
+    memswap_limit: 6g
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://127.0.0.1:8120/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 60s
+
+  vms-scanner:
+    image: registry.iris.monmyip.io/iris:${IRIS_IMAGE_TAG:-1.60.0-cpu}
+    container_name: vms-scanner
+    restart: unless-stopped
+    depends_on:
+      - vms
+    command: ["python3", "-m", "app.scanner.worker"]
+    env_file:
+      - .env
+    user: "1000:1000"
+    environment:
+      - USER=vms
+      - SCANNER_POLL_SECONDS=3
+    cap_drop:
+      - ALL
+    security_opt:
+      - "no-new-privileges:true"
+    volumes:
+      - ./data:/app/data
+    mem_limit: 1g
+    memswap_limit: 1g
