@@ -69,6 +69,8 @@ GPU/CPU at runtime, not disk).
 - **Detection-only by default.** Biometric features (face recognition, cross-camera identities,
   voiceprints) are an explicit, consent-gated opt-in — GDPR / EU AI-Act / 152-FZ aware. You enable
   them with your own legal basis and a commercial face-model licence. See [docs](https://docs.iris.monmyip.io).
+- **Licence-clean models.** The distributed build uses an Apache-2.0 detector (RT-DETR); it carries
+  no AGPL or research-only weights, and the image ships source-free (compiled).
 - Terms: **[EULA.md](EULA.md)** · **[EULA.ru.md](EULA.ru.md)**. This repository's install scripts are
   MIT (see [LICENSE](LICENSE)); the Iris software itself is licensed under the EULA.
 

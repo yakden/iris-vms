@@ -138,10 +138,9 @@ TRIAL_SERVER_URL=$PORTAL
 UPDATE_CHECK_ENABLED=true
 UPDATE_SERVER_URL=$UPDATES
 UPDATE_CHANNEL=stable
-# License-clean detector (Apache-2.0 RT-DETR, no AGPL YOLOv8n). Enable once the
-# image is rebuilt with the rtdetr_normalize fix (see docs/LICENSING.md):
-# MODEL_LICENSE_CLEAN=true
-# RTDETR_ONNX_URL=$BASE/rtdetr.onnx
+# License-clean detector: Apache-2.0 RT-DETR replaces AGPL YOLOv8n (validated).
+MODEL_LICENSE_CLEAN=true
+RTDETR_ONNX_URL=$BASE/rtdetr.onnx
 EOF
 fi
 
@@ -154,7 +153,7 @@ $COMPOSE $COMPOSE_FILES up -d
 # fetch AI models on first run if missing
 if [ -z "$(ls -A models 2>/dev/null)" ]; then
   say "Downloading AI models (~0.9 GB, one time)…"
-  $COMPOSE $COMPOSE_FILES run --rm vms python3 scripts/download_models.py || warn "Model download failed — retry: cd $WORKDIR && $COMPOSE $COMPOSE_FILES run --rm vms python3 scripts/download_models.py"
+  $COMPOSE $COMPOSE_FILES run --rm vms python3 scripts/download_models.py --license-clean || warn "Model download failed — retry: cd $WORKDIR && $COMPOSE $COMPOSE_FILES run --rm vms python3 scripts/download_models.py --license-clean"
   chown -R 1000:1000 models 2>/dev/null || true
   $COMPOSE $COMPOSE_FILES up -d
 fi
