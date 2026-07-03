@@ -2,10 +2,12 @@
 
 **Version 1.0 · Effective 2 July 2026**
 
-This End-User Licence Agreement ("**Agreement**") is a legally binding contract between:
+This End-User Licence Agreement ("**Agreement**") is a legally binding contract between the applicable **Licensor** — determined by the Licensee's location under §15 and identified on the order form — and the customer ("**Licensee**", "**you**"). The Licensor is one of:
 
-- **[LICENSOR — full legal name, legal form, registered seat and registration no.; e.g. "Iris VMS Sp. z o.o., a company incorporated in Poland, registered office at [address], KRS [......], NIP [......]"]** ("**Licensor**", "**we**", "**us**"); and
-- the natural or legal person that installs, activates, accesses, or uses the Software ("**Licensee**", "**you**").
+- **For international / EU customers (governed by §15.1):** **Sergey Gnatyuk**, a sole proprietor (*jednoosobowa działalność gospodarcza*) registered in CEIDG (Poland) since 01.08.2023, **NIP 9592064173**, **REGON 525970500**, registered office at [address — to be completed]; and
+- **For customers in the Russian Federation / CIS (governed by §15.2):** **Individual Entrepreneur (ИП) Gnatyuk Sergey Valentinovich**, **OGRNIP 325619600231870**, **INN 614329780763**, registered office at [address — to be completed]
+
+(each, "**Licensor**", "**we**", "**us**"). The **Licensee** ("**you**") is the natural or legal person that installs, activates, accesses, or uses the Software.
 
 **PLEASE READ THIS AGREEMENT CAREFULLY.** By clicking "I accept", installing, activating, or using the Software, you confirm that you have read, understood, and agree to be bound by this Agreement. **If you do not agree, do not install, activate, or use the Software.** If you accept on behalf of an organisation, you represent that you are authorised to bind that organisation, and "you" refers to that organisation.
 
@@ -168,7 +170,7 @@ This Agreement is provided in **English and Russian**. For a Licensee governed b
 
 ## 19. Contact
 
-**Licensor:** [see the entity block above] · **Legal notices & licence queries:** legal@iris.monmyip.io · **Documentation & support:** <https://docs.iris.monmyip.io/>
+**Licensor (EU / international):** Sergey Gnatyuk, sole proprietor (CEIDG, Poland), NIP 9592064173, REGON 525970500. **Licensor (RU / CIS):** IP Gnatyuk Sergey Valentinovich, OGRNIP 325619600231870, INN 614329780763. **Legal notices & licence queries:** legal@iris.monmyip.io · **Documentation & support:** <https://docs.iris.monmyip.io/>
 
 ---
 
