@@ -4,7 +4,7 @@
 
 This End-User Licence Agreement ("**Agreement**") is a legally binding contract between the applicable **Licensor** — determined by the Licensee's location under §15 and identified on the order form — and the customer ("**Licensee**", "**you**"). The Licensor is one of:
 
-- **For international / EU customers (governed by §15.1):** **Sergey Gnatyuk**, a sole proprietor (*jednoosobowa działalność gospodarcza*) registered in CEIDG (Poland) since 01.08.2023, **NIP 9592064173**, **REGON 525970500**, registered office at [address — to be completed]; and
+- **For international / EU customers (governed by §15.1):** **Denys Yakymov**, a sole proprietor (*jednoosobowa działalność gospodarcza*) registered in CEIDG (Poland) since 01.08.2023, **NIP 9592064173**, **REGON 525970500**, registered office at [address — to be completed]; and
 - **For customers in the Russian Federation / CIS (governed by §15.2):** **Individual Entrepreneur (ИП) Gnatyuk Sergey Valentinovich**, **OGRNIP 325619600231870**, **INN 614329780763**, registered office at [address — to be completed]
 
 (each, "**Licensor**", "**we**", "**us**"). The **Licensee** ("**you**") is the natural or legal person that installs, activates, accesses, or uses the Software.
@@ -170,7 +170,7 @@ This Agreement is provided in **English and Russian**. For a Licensee governed b
 
 ## 19. Contact
 
-**Licensor (EU / international):** Sergey Gnatyuk, sole proprietor (CEIDG, Poland), NIP 9592064173, REGON 525970500. **Licensor (RU / CIS):** IP Gnatyuk Sergey Valentinovich, OGRNIP 325619600231870, INN 614329780763. **Legal notices & licence queries:** legal@iris.monmyip.io · **Documentation & support:** <https://docs.iris.monmyip.io/>
+**Licensor (EU / international):** Denys Yakymov, sole proprietor (CEIDG, Poland), NIP 9592064173, REGON 525970500. **Licensor (RU / CIS):** IP Gnatyuk Sergey Valentinovich, OGRNIP 325619600231870, INN 614329780763. **Legal notices & licence queries:** legal@iris.monmyip.io · **Documentation & support:** <https://docs.iris.monmyip.io/>
 
 ---
 
